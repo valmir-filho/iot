@@ -10,6 +10,7 @@ display = ssd1306.SSD1306_I2C(128, 64, i2c)
 # Configuração do sensor DHT11.
 sensor = dht.DHT11(Pin(13))  # Ajuste o pino conforme necessário.
 
+
 # Função para atualizar o display com temperatura e umidade.
 def atualizar_display(temperatura, umidade):
     display.fill(0)  # Limpa o display.
